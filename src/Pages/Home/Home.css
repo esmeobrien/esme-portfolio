@@ -9,3 +9,55 @@
   text-align: center;
   color: #004E98; 
 }
+
+.profile-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%; /* Makes it circular */
+  border: 3px solid #004E98; /* Optional: outline color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.profile-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spotify-wrapper {
+  margin: 2rem auto 0;
+  max-width: 700px;
+  text-align: center;
+}
+
+.spotify-wrapper h3 {
+  font-size: 1.2rem;
+  color: #004E98;
+  margin-bottom: 0.5rem;
+}
+
+.contact-links {
+  list-style: none;         /* removes bullet points */
+  padding: 0;
+  display: flex;            /* optional: displays links horizontally */
+  gap: 1rem;                /* space between links */
+  justify-content: center; /* centers the row */
+}
+
+.contact-links li a {
+  text-decoration: none;    /* removes underline */
+  color: #004E98;           /* pick any color you like */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links li a:hover {
+  color: #6A994E;           /* subtle color on hover (sage green-ish) */
+}

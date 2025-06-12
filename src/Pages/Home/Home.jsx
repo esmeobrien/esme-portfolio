@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'; 
+import myPhoto from '../../assets/images/me.jpg'; 
 
 const Home = () => {
     return (
@@ -11,6 +12,12 @@ const Home = () => {
                     Explore my projects, learn more about me, or get in touch!
                 </p>
 
+            <div className="profile-photo-container">
+                <img src={myPhoto} alt="Esmé O'Brien" className="profile-photo" />
+            </div>
+
+            <div className="spotify-wrapper">
+                <h3>Music I Love</h3>
                 <iframe
                      style={{ borderRadius: '12px' }}
                      src="https://open.spotify.com/embed/playlist/2zyiHlotJdQAtf22M3hbsd?utm_source=generator&theme=1"
@@ -21,7 +28,7 @@ const Home = () => {
                     loading="lazy"
                     title="Spotify Playlist: Music I Love"
                 ></iframe>
-
+            </div>
                 <section className="connect-section">
                     <h2>Let’s Connect</h2>
                     <p>If you're interested in working together, have a question, or just want to say hi I’d love to hear from you!</p>
