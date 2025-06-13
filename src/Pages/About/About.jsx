@@ -1,12 +1,17 @@
 import React from 'react';
-import './About.css'; // Assuming you have a CSS file for styling
+import './About.css'; 
+import { Helmet } from 'react-helmet'; 
+
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Me - Esmé O'Brien Junior Javascript Developer</title>
+        <meta name="description" content="Learn more about Esmé O'Brien, a Manchester-based Junior Developer with a passion for front-end development, UI design, and customer engagement." />
+      </Helmet>
       <section className="about-section">
         <h1>About Me</h1>
-       
       </section>
 
       <div className="spotify-wrapper">
