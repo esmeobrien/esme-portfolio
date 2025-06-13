@@ -17,7 +17,7 @@ const Home = () => {
         </p>
 
                 <div className="profile-photo-container">
-                <img src={myPhoto} alt="Esmé O'Brien" className="profile-photo" />
+                <img src={myPhoto} alt="Esmé O'Brien - Web Developer" className="profile-photo" />
             </div> 
 
                  <section className="skills-section">
