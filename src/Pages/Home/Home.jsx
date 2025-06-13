@@ -7,28 +7,31 @@ const Home = () => {
         <section className="home">
             <div className="home-content">
                 <h2 className="chewy-heading">Welcome to My Portfolio!</h2>
-                <h2>I'm Esmé O'Brien</h2>
-                <p> An aspiring junior developer passionate about building beautiful, responsive, and accessible web experiences. 
-                    Explore my projects, learn more about me, or get in touch!
-                </p>
 
-            <div className="profile-photo-container">
+                <h2>Esmé O'Brien - Junior Developer</h2>
+
+                <div className="profile-photo-container">
                 <img src={myPhoto} alt="Esmé O'Brien" className="profile-photo" />
-            </div>
+            </div> 
 
-            <div className="spotify-wrapper">
-                <h3>Music I Love</h3>
-                <iframe
-                     style={{ borderRadius: '12px' }}
-                     src="https://open.spotify.com/embed/playlist/2zyiHlotJdQAtf22M3hbsd?utm_source=generator&theme=1"
-                    width="50%"
-                    height="152"
-                    allowFullScreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                    title="Spotify Playlist: Music I Love"
-                ></iframe>
-            </div>
+                 
+        <p>
+          Hi! I'm Esmé O'Brien, a driven and customer-focused professional with a passion for technology and people.
+          I bring a unique mix of retail leadership experience — currently a Supervisor at Sweaty Betty and technical skills
+          gained through full-stack training at Northcoders.
+        </p>
+        <p>
+          I love front-end development and UI design, especially creating intuitive web experiences using React and JavaScript.
+          Alongside coding, I’m deeply interested in SEO, marketing, and how technology can enhance customer engagement.
+        </p>
+        <p>
+          Outside of work and tech, I’m passionate about film photography, discovering new music, cooking, hiking, and traveling to new places.
+          My journey has been fueled by curiosity, strong communication, and a commitment to continuous learning all qualities I bring to every project I work on.
+        </p>
+
+            
+
+            
                 <section className="connect-section">
                     <h2>Let’s Connect</h2>
                     <p>If you're interested in working together, have a question, or just want to say hi I’d love to hear from you!</p>
@@ -39,6 +42,22 @@ const Home = () => {
                     <li><a href="https://github.com/esmeobrien" target="_blank" rel="noopener noreferrer">💻 GitHub</a></li>
                 </ul>
         </section>
+
+        <section className="skills-section">
+        <h2>Skills</h2>
+        <ul className="skills-list">
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>HTML5 & CSS3</li>
+          <li>Node.js & Express</li>
+          <li>SQL & PostgreSQL</li>
+          <li>Test-Driven Development (TDD)</li>
+          <li>Git & GitHub</li>
+          <li>Project Management</li>
+          <li>SEO & Digital Marketing Awareness</li>
+          <li>Strong Communication & Collaboration</li>
+        </ul>
+      </section>
             </div>
         </section>
     );

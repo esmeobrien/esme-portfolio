@@ -31,17 +31,7 @@
   padding: 2rem;
 }
 
-.spotify-wrapper {
-  margin: 2rem auto 0;
-  max-width: 700px;
-  text-align: center;
-}
 
-.spotify-wrapper h3 {
-  font-size: 1.2rem;
-  color: #004E98;
-  margin-bottom: 0.5rem;
-}
 
 .contact-links {
   list-style: none;         /* removes bullet points */
@@ -60,4 +50,32 @@
 
 .contact-links li a:hover {
   color: #6A994E;           /* subtle color on hover (sage green-ish) */
+}
+
+.skills-section h2 {
+    font-family: 'Chewy', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    color: #004E98; 
+}
+
+.skills-section ul {
+    list-style-type: none; 
+}
+
+.about-section p {
+    padding-left: 10px;
+}
+
+.connect-section h2 {
+    font-family: 'Chewy', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    color: #004E98; 
 }
