@@ -10,16 +10,32 @@ const Home = () => {
 
                 <h2>Esmé O'Brien - Junior Developer</h2>
 
-                <div className="profile-photo-container">
-                <img src={myPhoto} alt="Esmé O'Brien" className="profile-photo" />
-            </div> 
-
-                 
-        <p>
+                <p>
           Hi! I'm Esmé O'Brien, a driven and customer-focused professional with a passion for technology and people.
           I bring a unique mix of retail leadership experience — currently a Supervisor at Sweaty Betty and technical skills
           gained through full-stack training at Northcoders.
         </p>
+
+                <div className="profile-photo-container">
+                <img src={myPhoto} alt="Esmé O'Brien" className="profile-photo" />
+            </div> 
+
+                 <section className="skills-section">
+        <h2>Skills</h2>
+        <ul className="skills-list">
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>HTML5 & CSS3</li>
+          <li>Node.js & Express</li>
+          <li>SQL & PostgreSQL</li>
+          <li>Test-Driven Development (TDD)</li>
+          <li>Git & GitHub</li>
+          <li>Project Management</li>
+          <li>SEO & Digital Marketing Awareness</li>
+          <li>Strong Communication & Collaboration</li>
+        </ul>
+      </section>
+        
         <p>
           I love front-end development and UI design, especially creating intuitive web experiences using React and JavaScript.
           Alongside coding, I’m deeply interested in SEO, marketing, and how technology can enhance customer engagement.
@@ -43,21 +59,7 @@ const Home = () => {
                 </ul>
         </section>
 
-        <section className="skills-section">
-        <h2>Skills</h2>
-        <ul className="skills-list">
-          <li>JavaScript (ES6+)</li>
-          <li>React.js</li>
-          <li>HTML5 & CSS3</li>
-          <li>Node.js & Express</li>
-          <li>SQL & PostgreSQL</li>
-          <li>Test-Driven Development (TDD)</li>
-          <li>Git & GitHub</li>
-          <li>Project Management</li>
-          <li>SEO & Digital Marketing Awareness</li>
-          <li>Strong Communication & Collaboration</li>
-        </ul>
-      </section>
+        
             </div>
         </section>
     );
