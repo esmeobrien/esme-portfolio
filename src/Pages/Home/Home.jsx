@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'; 
 import myPhoto from '../../assets/images/me.jpg'; 
 
+
 const Home = () => {
     return (
         <section className="home">

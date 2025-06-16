@@ -30,7 +30,91 @@
   margin-bottom: 0.5rem;
 }
 
+.travel-section {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  background-color: #f7fdf8; /* soft sage-tinted background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+.travel-section h2 {
+  font-family: 'Chewy', cursive;
+  color: #004E98;
+  text-align: center;
+}
 
+.travel-section p {
+  font-size: 1rem;
+  text-align: center;
+}
 
+.travel-section ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
 
+.travel-section li {
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+
+.travel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.travel-card {
+  width: 150px;
+  text-align: center;
+}
+
+.travel-card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Crop to fill */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-card p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.about-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.insta-link {
+  display: inline-block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #004E98;
+  font-weight: bold;
+}
+
+.insta-link:hover {
+  text-decoration: underline;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
