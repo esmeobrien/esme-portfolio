@@ -1,51 +1,74 @@
-.about-section h1 {
-  font-family: 'Chewy', system-ui;
+/* Typography & Colors */
+:root {
+  --primary-color: #004E98;
+  --bg-sage: #f7fdf8;
+  --font-chewy: 'Chewy', system-ui;
+}
+
+/* === SECTION HEADINGS === */
+h1, h2, h3 {
+  font-family: var(--font-chewy);
   font-weight: 400;
-  font-style: normal;
-  font-size: 3rem; 
+  color: var(--primary-color);
+  text-align: center;
   margin-bottom: 1rem;
-  text-align: center;
-  color: #004E98; 
 }
 
-.about-section h2 {
-    font-family: 'Chewy', system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem; 
-    margin-bottom: 1rem;
-    padding-left: 10px;
-    color: #004E98; 
+.about-section h1 {
+  font-size: 3rem;
 }
 
-.spotify-wrapper {
-  margin: 2rem auto 0;
-  max-width: 700px;
-  text-align: center;
+.about-section h2,
+.travel-section h2 {
+  font-size: 2rem;
+  padding-left: 10px;
 }
 
 .spotify-wrapper h3 {
   font-size: 1.2rem;
-  color: #004E98;
   margin-bottom: 0.5rem;
 }
 
-.travel-section {
-  margin: 2rem auto;
-  padding: 1.5rem;
-  max-width: 600px;
-  background-color: #f7fdf8; /* soft sage-tinted background */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.travel-section h2 {
-  font-family: 'Chewy', cursive;
-  color: #004E98;
+/* === LAYOUT STRUCTURE === */
+.about-section {
+  padding: 2rem;
   text-align: center;
 }
 
-.travel-section p {
+.main-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.left-col,
+.right-col {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+/* === SPOTIFY === */
+.spotify-wrapper {
+  margin: 2rem auto 0;
+  max-width: 700px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* === TRAVEL === */
+.travel-section {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--bg-sage);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.travel-section p,
+.travel-section ul {
   font-size: 1rem;
   text-align: center;
 }
@@ -53,7 +76,6 @@
 .travel-section ul {
   list-style: none;
   padding-left: 0;
-  text-align: center;
 }
 
 .travel-section li {
@@ -62,22 +84,20 @@
 }
 
 .travel-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .travel-card {
-  width: 150px;
   text-align: center;
 }
 
 .travel-card img {
   width: 100%;
-  height: 150px; /* Set a fixed height */
-  object-fit: cover; /* Crop to fill */
+  height: 100px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -87,16 +107,16 @@
   font-weight: 500;
 }
 
-.about-section {
-  padding: 2rem;
-  text-align: center;
+/* === PHOTOGRAPHY === */
+.photography-section {
+  margin-bottom: 2rem;
 }
 
 .insta-link {
   display: inline-block;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   text-decoration: none;
-  color: #004E98;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -113,8 +133,77 @@
 }
 
 .photo-gallery img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* === COOKING === */
+.cooking-section {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cooking-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cooking-card {
+  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cooking-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cooking-card p {
+  margin: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.cooking-card:hover {
+  transform: scale(1.03);
+}
+
+/* === RESPONSIVE TWEAKS === */
+@media (max-width: 768px) {
+  .main-content-flex {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .left-col,
+  .right-col {
+    max-width: 100%;
+  }
+
+  .photo-gallery img,
+  .cooking-card,
+  .travel-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .travel-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
