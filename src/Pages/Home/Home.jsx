@@ -13,7 +13,7 @@ const Home = () => {
 
                 <p>
           Hi! I'm Esmé O'Brien, a driven and customer-focused professional with a passion for technology and people.
-          I bring a unique mix of retail leadership experience — currently a Supervisor at Sweaty Betty and technical skills
+          I bring a unique mix of retail leadership experience - currently a Supervisor at Sweaty Betty and technical skills
           gained through full-stack training at Northcoders.
         </p>
 
